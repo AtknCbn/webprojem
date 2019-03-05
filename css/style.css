@@ -120,7 +120,7 @@ footer
 }
 
 body { margin: 0; } 
-div#slider { overflow: hidden; }
+div#slider { overflow: hidden; border-top-left-radius: 100px; border-bottom-right-radius: 100px;  }
 div#slider figure img { width: 20%; float: left; }
 div#slider figure { 
   position: relative;
@@ -130,5 +130,6 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite; 
+
 }
 
