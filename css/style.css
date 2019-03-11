@@ -1,106 +1,25 @@
 *
 {
-  color: #fff;
   font-size: 28px;
   font-weight: 300;
   box-sizing: border-box;
   font-family: 'Metrophobic', Arial, serif; font-weight: 400;
 }
-
-body
+.alt-menu
 {
-  background-color: #323232;
-  padding: 50px;
-}
-
-header,
-nav,
-section,
-aside,
-footer
-{
-  text-align: center;
-  background-color: #666666;
-  border-radius: 5px;
-  padding: 50px;
-}
-
-header,
-nav,
-footer
-{
-  width: 100%;
-  padding: 50px;
-}
-
-header
-{
-  margin-bottom: 50px;
-}
-
-h1
-{
-  margin: 0;
-}
-
-nav,
-aside
-{
-  width: 25%;
-}
-
-section
-{
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
   float: left;
-  width: calc(50% - 100px);
-  margin: 0 50px 50px 50px;
+  background-color:#4e79ae;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-
-section header,
-section article,
-section footer
-{
-  width: 100%;
-  background-color: #999999;
-  border-radius: 5px;
-  margin: 0;
-  padding: 50px;
-}
-
-section article
-{
-  margin: 25px 0;
-}
-
 nav
 {
   float: left;
 }
-
-aside
-{
-  float: right;
-}
-
-nav ul
-{
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-nav li
-{
-  display: inline-block;
-  margin: 0 0 0 50px;
-  width: 100px;
-}
-
-nav li:first-child
-{
-  margin-left: 0;
-}
-
 footer
 {
   clear: both;
@@ -114,13 +33,13 @@ footer
 45% { left: -100%; }
 50% { left: -200%; }
 70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+75% { left: -200%; }
+95% { left: -200%; }
+100% { left: -300%; }
 }
 
 body { margin: 0; } 
-div#slider { overflow: hidden; border-top-left-radius: 100px; border-bottom-right-radius: 100px;  }
+div#slider { overflow: hidden;}
 div#slider figure img { width: 20%; float: left; }
 div#slider figure { 
   position: relative;
@@ -133,3 +52,230 @@ div#slider figure {
 
 }
 
+/*header*/
+
+.header-fixed {
+  background-color:#292c2f;
+  box-shadow:0 1px 1px #ccc;
+  padding: 20px 40px;
+  height: 80px;
+  color: #ffffff;
+  box-sizing: border-box;
+  top:-100px;
+
+  -webkit-transition:top 0.3s;
+  transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*  The header placeholder. It is displayed when the header is fixed to the top of the
+  browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+  height: 80px;
+  display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+  float: left;
+  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+  color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+  font:16px Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  float: right;
+}
+
+.header-fixed .header-limiter nav a{
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration:none;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+  opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+  color: #608bd2;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+  padding: 10px 40px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+  display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+  line-height: 28px;
+  font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+  .header-fixed {
+    padding: 20px 0;
+    height: 75px;
+  }
+
+  .header-fixed .header-limiter h1 {
+    float: none;
+    margin: -8px 0 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .header-fixed .header-limiter nav {
+    line-height: 1;
+    float:none;
+  }
+
+  .header-fixed .header-limiter nav a {
+    font-size: 13px;
+  }
+
+  body.fixed .header-fixed {
+    display: none;
+  }
+
+}
+
+/*
+   We are clearing the body's margin and padding, so that the header fits properly.
+   We are also adding a height to demonstrate the scrolling behavior. You can remove
+   these styles.
+ */
+/*footer*/
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:300;
+  background-color:#bcc0c5;
+  color:#FFF;
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+}
+section{
+  text-align:center;
+}
+.footer #button{
+  width:35px;
+  height:35px;
+  border:#608bd2 12px solid;
+  border-radius:35px;
+  margin:0 auto;
+  position:relative;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+  width:35px;
+  height:35px;
+  border: #3A3A3A 12px solid;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  position:relative;
+}
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+    width: 100%;
+    height: 40px;
+    overflow:hidden;
+    margin:0 auto;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  z-index:999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+.footer #container{
+  margin-top:5px;
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: #292c2f;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+  width:150px;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  margin-top: 75px;
+  text-align:center;
+}
+.footer h3{
+  font-family: 'Helvetica';
+  font-size: 30px;
+  font-weight: 100;
+  margin-top:70px;
+  margin-left:40px;
+}

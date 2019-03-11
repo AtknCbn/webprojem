@@ -2,43 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Basic html layout example</title>
-  <script src="js/atkncbn.js" type="text/javascript"></script>
+  <title>ARABALAR</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/demo.css">
+  <link rel="stylesheet" href="assets/header-fixed.css">
+
 
 </head>
-<body class="hello">
-  <header>
+<body>
+  
+  <header class="header-fixed">
 
-     
+  <div class="header-limiter">
 
-  </header>
-  <nav>
-    
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav>
-  <section>
-   <base>
-<div id="slider">
-<figure>
+    <h1><a href="#">Company<span>logo</span></a></h1>
 
-<img src="resimler/m3.jpg" alt>
-<img src="resimler/m4.jpg" alt>
-<img src="resimler/m5.jpg" alt>
-<img src="resimler/m6.jpg" alt>
+    <nav>
+      <a href="#" class="selected">Anasayfa</a>
+      <a href="#">Blog</a>
+      <a href="#">Fiyatlandırma</a>
+      <a href="#">Hakkımızda</a>
+      <a href="#">SSS</a>
+      <a href="#">İletişim</a>
+    </nav>
 
-</figure>
-</div>
-  </section>
-  <aside>
-    
-  </aside>
-  <footer>
-    
-  </footer>
+  </div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+    var showHeaderAt = 150;
+
+    var win = $(window),
+        body = $('body');
+
+  
+    if(win.width() > 400){
+
+  
+
+      win.on('scroll', function(e){
+
+        if(win.scrollTop() > showHeaderAt) {
+          body.addClass('fixed');
+        }
+        else {
+          body.removeClass('fixed');
+        }
+      });
+
+    }
+
+  });
+
+</script>
+
+
+
+    <div id="slider">
+      <figure>
+
+        <img src="resimler/m3.jpg" alt>
+        <img src="resimler/m4.jpg" alt>
+        <img src="resimler/m5.jpg" alt>
+        <img src="resimler/m6.jpg" alt>
+
+      </figure>
+    </div>
+  <div class="alt-menu">
+      sssdssdddsd
+  </div>
+
+  <div class="alt-menu">
+    gdssilshklsjjkh
+  </div>
+
+  <div class="alt-menu">
+    gdssilshklsjjkh
+  </div>
+
+  <div class="alt-menu">
+    gdssilshklsjjkh
+  </div>
+  
+  <div class="alt-menu">
+    gdssilshklsjjkh
+  </div>
+  
+  <div class="alt-menu">
+    gdssilshklsjjkh
+  </div>
+    <div class="footer">
+      <div id="button"></div>
+        <div id="container">
+          <div id="cont">
+            <div class="footer_center">
+             
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
