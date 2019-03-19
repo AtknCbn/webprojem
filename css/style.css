@@ -3,27 +3,25 @@
   font-size: 28px;
   font-weight: 300;
   box-sizing: border-box;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+  
 }
-.alt-menu
+.alt1-menu
 {
   border-radius: 20px;
-  width: 250px;
-  height: 250px;
+  background-color:#292c2f;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin-top: 50px;
   float: left;
-  background-color:#4e79ae;
-  margin-left: 50px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-left: 385px;
+  margin-bottom: 50px;
+  box-shadow: 15px 10px 20px grey;
+  text-align: center;
 }
-nav
-{
-  float: left;
-}
-footer
-{
-  clear: both;
-}
+
+
+
 /*slider*/
 
 @keyframes slidy {
@@ -81,19 +79,6 @@ div#slider figure {
   display: none;
 }
 
-/* Logo */
-
-.header-fixed .header-limiter h1 {
-  float: left;
-  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-  line-height: 40px;
-  margin: 0;
-}
-
-.header-fixed .header-limiter h1 span {
-  color: #5383d3;
-}
-
 /* The navigation links */
 
 .header-fixed .header-limiter a {
@@ -113,23 +98,21 @@ div#slider figure {
   text-decoration:none;
   color: #ffffff;
   opacity: 0.9;
+  font-size:24px;
 }
 
 .header-fixed .header-limiter nav a:hover{
   opacity: 1;
+  color: #608bd2;
+  transition: 0.7s;
 }
 
-.header-fixed .header-limiter nav a.selected {
-  color: #608bd2;
-  pointer-events: none;
-  opacity: 1;
-}
 
 /* Fixed version of the header */
 
 body.fixed .header-fixed {
-  padding: 10px 40px;
-  height: 50px;
+  padding: 15px 40px;
+  height: 70px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -140,49 +123,14 @@ body.fixed .header-fixed {
 body.fixed .header-fixed-placeholder {
   display: block;
 }
-
-body.fixed .header-fixed .header-limiter h1 {
-  font-size: 24px;
-  line-height: 30px;
-}
-
 body.fixed .header-fixed .header-limiter nav {
   line-height: 28px;
   font-size: 13px;
 }
 
-
-/* Making the header responsive */
-
-@media all and (max-width: 600px) {
-
-  .header-fixed {
-    padding: 20px 0;
-    height: 75px;
+body.fixed .header-fixed nav a {
+    padding-top: 5px;
   }
-
-  .header-fixed .header-limiter h1 {
-    float: none;
-    margin: -8px 0 10px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
-  }
-
-  .header-fixed .header-limiter nav {
-    line-height: 1;
-    float:none;
-  }
-
-  .header-fixed .header-limiter nav a {
-    font-size: 13px;
-  }
-
-  body.fixed .header-fixed {
-    display: none;
-  }
-
-}
 
 /*
    We are clearing the body's margin and padding, so that the header fits properly.
