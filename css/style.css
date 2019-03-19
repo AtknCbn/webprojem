@@ -14,10 +14,24 @@
   position: relative;
   margin-top: 50px;
   float: left;
-  margin-left: 385px;
+  margin-left: 375px;
   margin-bottom: 50px;
   box-shadow: 15px 10px 20px grey;
   text-align: center;
+}
+.alt1-menu h3{
+  font:Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: underline;
+
+}
+.alt1-menu img{
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 
