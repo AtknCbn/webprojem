@@ -1,0 +1,199 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ARABALAR</title>
+  <link rel="stylesheet" type="text/css" href="css/hakkimizda.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+
+</head>
+<body>
+  
+  <header class="header-fixed">
+
+  <div class="header-limiter">
+    <img style="width: 100px; height: 50px; margin-left: -500px; "src="resimler/logo.png" alt>
+    
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="index.html">Referanslarımız</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+    var showHeaderAt = 150;
+
+    var win = $(window),
+        body = $('body');
+
+  
+    if(win.width() > 400){
+
+  
+
+      win.on('scroll', function(e){
+
+        if(win.scrollTop() > showHeaderAt) {
+          body.addClass('fixed');
+        }
+        else {
+          body.removeClass('fixed');
+        }
+      });
+
+    }
+
+  });
+
+</script>
+
+
+
+  <div style="position: relative; margin-left: 300px;">
+    <img src="resimler/hakkimizda.jpg" style="margin-top: 100px; position: absolute;">
+      <h1 style="position: absolute; margin-top: 180px; margin-left: 330px; text-align: center;">İnce zevkler, yüksek standartlar, seçkin markalar.<br><br>Hakkımızda</h1>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <div style="width: 1300px; height: 350px; margin-left: 300px; color: black;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="w3-content w3-section" style="max-width:650px; margin-left: 630px; margin-top: 20px;">
+          <img class="mySlides" src="resimler/bmw-1-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-2-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-3-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-4-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-5-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-6-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-7-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/bmw-i-serisi.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/m3.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/m4.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/m5.jpg" style="width:100%">
+          <img class="mySlides" src="resimler/m6.jpg" style="width:100%">
+        </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+    <div class="footer">
+      <div id="button"></div>
+        <div id="container">
+          <div id="cont">
+            <div class="footer_center">
+             
+   <div class="footer1">
+      <!--Footer_container-->
+      <div class="footer_container">
+         <!--kutu-->
+         <div id="kutu">
+            <b style="margin-left: -30px;">Sayfalar</b>
+            <ul>
+               <a href="index.html"><li>Ana Sayfa</li></a>
+               <a href="hakkimizda.html"><li>Hakkımızda</li></a>
+               <a href="Referanslarimiz.html"><li>Referanslarımız</li></a>
+               <a href="iletisim.html"><li>İletişim</li></a>
+            </ul>
+         </div>
+         <!--kutu###-->
+         <!--kutu-->
+         <div id="kutu" style="margin-left:150px;">
+            <b style="margin-left: -83px;">İletişim</b>
+            <ul>
+               <li>Atakan Mehmet ÇOBAN</li>
+               <li>C: 0 (123) 456 78 90</li>
+               <li>T: 0 (123) 456 78 89</li>
+            </ul>
+         </div>
+         <!--kutu###-->
+         <!--kutu-->
+         <div id="kutu" style="margin-left:150px;">
+            <b style="margin-left: -20px;">Sosyal Medya</b>
+            <ul>
+               <a href="#"><li><img src="resimler/facebook-logo.png" alt=""></li></a>
+               <a href="#"><li><img src="resimler/instagram-logo.png" alt=""></li></a>
+            </ul>
+         </div>
+         <!--kutu###-->
+      </div>
+      <!--Footer_container###-->
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
